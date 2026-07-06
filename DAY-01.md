@@ -17,3 +17,5 @@ By the end of this session, you will understand:
 3. Mutability vs. Immutability: Why this distinction is critical for data science.
 4. Type Casting: How to convert between different data types.
 5. Best Practices: Variable naming conventions in Python.
+
+# 1. Variables:Pointers to Memory
