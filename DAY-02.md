@@ -186,6 +186,7 @@ a is not c : True
 2. If it is divisible by 5 or is a multiple of 3.
 
 3. Print both boolean results.
+
 ## Solution
 ```
 num = 30
@@ -203,6 +204,7 @@ Divisible by 5 or Multiple of 3: True
 ```
 
 ## Exercise 2: Find the odd and the even numbers using bitwise operators.
+
 ## Solution
 ```
 num = int(input("Enter a number: "))
@@ -219,6 +221,7 @@ Enter a number: 15
 ```
 
 ## Exercise 3: Check if a number is positive and even, and check if it is divisible by 5 and multiple of 3.
+
 ## Solution
 ```
 number = 30
