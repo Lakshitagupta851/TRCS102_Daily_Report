@@ -66,7 +66,6 @@ print(type(x))
 
 **Output:**
 ```
-<class 'int'>
 
 # 4. Built-in Data Types
 
