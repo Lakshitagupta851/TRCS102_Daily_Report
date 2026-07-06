@@ -285,3 +285,33 @@ print("Unique roles in the system:", unique_roles)
 # 3. Count unique roles
 print("Count of unique roles:", len(unique_roles))
 ```
+## Exercise 4: AI Hyperparameters Dictionary
+Create a dictionary containing the following hyperparameters:
+Learning Rate (LR): 0.001
+Batch Size: 32
+Optimizer: "Adam"
+Epochs: 10
+Early Stopping: True
+Print each value using its corresponding key. Then update the learning rate to 0.005 and print the dictionary to verify the changes.
+## Solution
+```
+hyperparameters = {
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "optimizer": "Adam",
+    "epochs": 10,
+    "early_stopping": True
+}
+
+# Print specific keys
+print("LR:", hyperparameters["learning_rate"])
+print("Batch Size:", hyperparameters["batch_size"])
+print("Optimizer:", hyperparameters["optimizer"])
+print("Epochs:", hyperparameters["epochs"])
+print("Early stopping:", hyperparameters["early_stopping"])
+
+# Update learning rate in-place
+hyperparameters["learning_rate"] = 0.005
+
+print("\nUpdated dictionary:", hyperparameters)
+```
