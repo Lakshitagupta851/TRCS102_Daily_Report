@@ -1,10 +1,8 @@
 # 📘 TRCS102 - Daily Report
 
----
 
 # 🗓️ Day 01 of Training
 
----
 ## Python Basics — Variables and Data Types
 
 Welcome to the **Industrial Training for AI & Machine Learning**!
