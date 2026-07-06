@@ -19,3 +19,28 @@ By the end of this session, you will understand:
 5. Best Practices: Variable naming conventions in Python.
 
 # 1. Variables:Pointers to Memory
+
+In Python, a variable is not a container that stores data directly. Instead, it acts as a **reference (or pointer) to an object in memory**. When a value is assigned to a variable, Python creates the object in memory (if it doesn't already exist) and the variable points to that memory location. Multiple variables can even refer to the same object, making memory management efficient.
+### Example
+
+```python
+x = 10
+y = x
+
+print(x)
+print(y)
+
+print(id(x))
+print(id(y))
+```
+
+**Output (example):**
+```
+10
+10
+140719021838552
+140719021838552
+```
+
+**Explanation:**  
+Both `x` and `y` point to the same object in memory, so `id(x)` and `id(y)` are the same.
