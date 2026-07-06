@@ -48,6 +48,6 @@ Both `x` and `y` point to the same object in memory, so `id(x)` and `id(y)` are 
 # 2. Sharing References
 
 In Python, multiple variables can refer to the same object in memory. This is known as **sharing references**. Any changes made to a mutable object (such as a list or dictionary) through one variable are reflected when accessed through the other variable because both point to the same memory location.
-a = [1, 2, 3]
+```a = [1, 2, 3]
 b = a
 print(a is b)   # True
