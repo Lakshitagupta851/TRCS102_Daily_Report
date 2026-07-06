@@ -165,8 +165,7 @@ a is not c : True
 
 ## Exercises: Operators ans Expressions
 
-## Exercise 1
-Write a Python script that takes a number (you can hardcode it to start) and checks:
+## Exercise 1: Write a Python script that takes a number (you can hardcode it to start) and checks:
 
 1. If the number is strictly positive (greater than 0) AND even.
 
@@ -189,8 +188,7 @@ Positive and Even: True
 Divisible by 5 or Multiple of 3: True
 ```
 
-## Exercise 2
-Find the odd and the even numbers using bitwise operators.
+## Exercise 2: Find the odd and the even numbers using bitwise operators.
 ## Solution
 ```
 num = int(input("Enter a number: "))
@@ -206,8 +204,7 @@ Enter a number: 15
 15 is an Odd number
 ```
 
-## Exercise 3 
-Check if a number is positive and even, and check if it is divisible by 5 and multiple of 3.
+## Exercise 3: Check if a number is positive and even, and check if it is divisible by 5 and multiple of 3.
 ## Solution
 ```
 number = 30
