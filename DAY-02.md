@@ -163,6 +163,8 @@ a == c : True
 a is not c : True
 ```
 
+
+
 | Operator Type           | Purpose                                               |
 | ----------------------- | ----------------------------------------------------- |
 | Arithmetic              | Performs mathematical calculations                    |
@@ -172,6 +174,7 @@ a is not c : True
 | Bitwise                 | Performs operations on binary values                  |
 | Membership              | Checks whether an element exists in a collection      |
 | Identity                | Checks whether two variables refer to the same object |
+
 
 
 ## Exercises: Operators ans Expressions
