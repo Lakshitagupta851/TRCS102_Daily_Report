@@ -162,3 +162,63 @@ a is c : False
 a == c : True
 a is not c : True
 ```
+
+## Exercises: Operators ans Expressions
+
+## Exercise 1
+Write a Python script that takes a number (you can hardcode it to start) and checks:
+
+1. If the number is strictly positive (greater than 0) AND even.
+
+2. If it is divisible by 5 or is a multiple of 3.
+
+3. Print both boolean results.
+## Solution
+```
+num = 30
+
+condition1 = (num > 0) and (num % 2 == 0)
+condition2 = (num % 5 == 0) or (num % 3 == 0)
+
+print("Positive and Even:", condition1)
+print("Divisible by 5 or Multiple of 3:", condition2)
+```
+## Output
+```
+Positive and Even: True
+Divisible by 5 or Multiple of 3: True
+```
+
+## Exercise 2
+Find the odd and the even numbers using bitwise operators.
+## Solution
+```
+num = int(input("Enter a number: "))
+
+if num & 1:
+    print(num, "is an Odd number")
+else:
+    print(num, "is an Even number")
+```
+## Output
+```
+Enter a number: 15
+15 is an Odd number
+```
+
+## Exercise 3 
+Check if a number is positive and even, and check if it is divisible by 5 and multiple of 3.
+## Solution
+```
+number = 30
+
+# 1. Positive AND Even
+is_pos_and_even = (number > 0) and (number % 2 == 0)
+
+# 2. Divisible by 5 OR multiple of 3
+is_div_5_or_mult_3 = (number % 5 == 0) or (number % 3 == 0)
+
+print(f"For number {number}:")
+print(f"Is positive and even? {is_pos_and_even}")
+print(f"Is divisible by 5 or multiple of 3? {is_div_5_or_mult_3}")
+```
