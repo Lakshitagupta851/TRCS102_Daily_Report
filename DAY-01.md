@@ -53,7 +53,7 @@ a = [1, 2, 3]
 b = a
 print(a is b)   # True
 ```
-## Dynamic Typing
+## 3. Dynamic Typing
 
 Python is a **dynamically typed** language, which means you do not need to declare the data type of a variable explicitly. The type is determined automatically based on the value assigned and can change during program execution.
 ```python
@@ -67,5 +67,66 @@ print(type(x))
 **Output:**
 ```
 <class 'int'>
+
+# 4. Built-in Data Types
+
+Data types define the kind of value a variable can store and determine the operations that can be performed on it. Python provides several built-in data types, such as **Numeric**, **String**, **List**, **Tuple**, **Set**, **Dictionary**, and **Boolean**. Among these, **Numeric** data types are used to represent numerical values in different forms.
+## Numeric Types
+
+Python provides three built-in numeric data types: **int**, **float**, and **complex**. These types are used to represent whole numbers, decimal numbers, and complex numbers, respectively.
+
+### Example
+
+```python
+a = 10
+b = 3.14
+c = 2 + 3j
+
+print(type(a))
+print(type(b))
+print(type(c))
+```
+
+**Output:**
+```
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+```
+
+**Explanation:**  
+- `int` represents whole numbers (e.g., `10`).
+- `float` represents decimal numbers (e.g., `3.14`).
+- `complex` represents numbers with real and imaginary parts (e.g., `2 + 3j`).
 <class 'str'>
+```
+## Text/String Type
+
+A **string (`str`)** is a sequence of characters used to store and manipulate textual data in Python. Strings can contain letters, numbers, symbols, and spaces, and they can be enclosed in **single (`' '`), double (`" "`), or triple (`''' '''` or `""" """`) quotes**. Since strings are **immutable**, their contents cannot be changed after creation.```python
+name = "Lakshita"
+
+print(name)
+print(type(name))
+```
+
+**Output:**
+```
+Lakshita
+<class 'str'>
+```
+## Boolean and None Types
+
+Python provides the **Boolean (`bool`)** and **None (`NoneType`)** data types. A Boolean value represents one of two logical states: **`True`** or **`False`**, and is commonly used in comparisons and decision-making. The **`None`** value represents the absence of a value or a null object and is often used to initialize variables or indicate that no value is available.
+```python
+is_student = True
+result = None
+
+print(type(is_student))
+print(type(result))
+```
+
+**Output:**
+```
+<class 'bool'>
+<class 'NoneType'>
 ```
