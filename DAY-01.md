@@ -8,7 +8,7 @@ Welcome to the **Industrial Training for AI & Machine Learning**!
 
 Today, we are starting with the absolute core foundation of Python programming. Understanding how Python handles variables and memory is essential, especially as we move into data manipulation, neural networks, and model training later on.
 
-## Learning Objectives
+Learning Objectives
 
 By the end of this session, you will understand:
 
