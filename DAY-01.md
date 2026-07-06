@@ -1,13 +1,7 @@
-# DAY 01 (22 June 2026)
+# 📘 TRCS102 - Daily Report
 
-## Topics Covered
-- Variables
-- Data Types
+---
 
-## Programs
+# 🗓️ Day 01 of Training
 
-### Program 1
-
-```python
-a = 10
-print(a)
+---
