@@ -274,3 +274,132 @@ for i in range(1, 6):
 4
 5
 ```
+
+## 3. Exercises
+
+## Exercise 1: Validate password length of a least 6 characters using a loop and break.
+## Solution:
+```
+passwords = ["abc", "12345", "securepwd123", "short"]
+
+for pwd in passwords:
+    print(f"Checking password attempt: '{pwd}'")
+    
+    # Condition check: break if length >= 6
+    if len(pwd) >= 6:
+        print(f"Success! '{pwd}' is a valid password (length={len(pwd)}).")
+        break
+```
+
+## Exercise 2: Classify age into child, teenage, adult, or senior using conditionals,
+## Solution:
+```
+age = 25
+
+if age < 13:
+    category = "Child"
+elif 13 <= age <= 19:
+    category = "Teenager"
+elif 20 <= age <= 59:
+    category = "Adult"
+else:
+    category = "Senior"
+
+print(f"Age: {age} | Category: {category}") 
+```
+
+## Exercise 3: Interactive ATM System Simulator
+Create a command-line ATM System Simulator using a while loop.
+Requirements:
+Initialize a variable balance = 1000.
+Display the following menu repeatedly:
+Option 1: Check Balance
+Option 2: Deposit Money
+Option 3: Withdraw Money (ensure the balance never becomes negative)
+Option 4: Exit
+Prompt the user to enter a choice.
+Use a while loop to keep displaying the menu until the user selects the Exit option.
+## Solution:
+```
+balance = 1000
+mock_actions = [(1, 0), (2, 300), (3, 400), (3, 1200), (4, 0)]
+action_index = 0
+
+while True:
+    # Display menu and get mock action
+    choice, amount = mock_actions[action_index]
+    print(f"\n--- ATM Menu (Balance: ${balance}) ---")
+    print("1. Check Balance | 2. Deposit | 3. Withdraw | 4. Exit")
+    print(f"Selected Choice: {choice} (Amount: ${amount})")
+    action_index += 1
+    
+    # Branch logic
+    if choice == 1:
+        print(f"Current Balance: ${balance}")
+    elif choice == 2:
+        balance += amount
+        print(f"Successfully deposited ${amount}. New Balance: ${balance}")
+    elif choice == 3:
+        if amount > balance:
+            print(f"Declined: Insufficient funds! Cannot withdraw ${amount}.")
+        else:
+            balance -= amount
+            print(f"Successfully withdrew ${amount}. New Balance: ${balance}")
+    elif choice == 4:
+        print("Thank you for using the ATM! Exiting transaction.")
+        break
+    else:
+        print("Invalid selection! Please choose options 1-4.")
+```
+
+## Exercise 4: Shopping Cart System
+Create a command-line Shopping Cart System using a while loop.
+Requirements:
+Press 1: Add an item along with its price to the shopping cart.
+Press 2: Display the total number of items and the total cart value.
+Press 3: Proceed to checkout and ask the customer whether they want to Pay or Cancel the order.
+Press 4: Exit the program using the break statement.
+Use a while loop to repeatedly display the menu until the user chooses to exit.
+## Solution:
+```
+cart = []
+total = 0
+
+while True:
+    print("\n===== Shopping Cart =====")
+    print("1. Add Item")
+    print("2. View Cart")
+    print("3. Checkout")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        item = input("Enter item name: ")
+        price = float(input("Enter item price: "))
+        cart.append(item)
+        total += price
+        print(item, "added to cart.")
+
+    elif choice == 2:
+        print("\nItems in Cart:", cart)
+        print("Total Items:", len(cart))
+        print("Total Amount: ₹", total)
+
+    elif choice == 3:
+        print("\nTotal Bill: ₹", total)
+        payment = input("Type 'pay' to confirm or 'cancel' to cancel: ")
+
+        if payment.lower() == "pay":
+            print("Payment Successful! Thank you for shopping.")
+            break
+        elif payment.lower() == "cancel":
+            print("Order Cancelled.")
+
+    elif choice == 4:
+        print("Exiting Shopping Cart...")
+        break
+
+    else:
+        print("Invalid Choice! Please try again.")
+```
