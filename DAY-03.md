@@ -277,7 +277,7 @@ for i in range(1, 6):
 
 ## 3. Exercises
 
-## Exercise 1: Validate password length of a least 6 characters using a loop and break.
+## Exercise 3.1: Validate password length of a least 6 characters using a loop and break.
 ## Solution:
 ```
 passwords = ["abc", "12345", "securepwd123", "short"]
@@ -291,7 +291,7 @@ for pwd in passwords:
         break
 ```
 
-## Exercise 2: Classify age into child, teenage, adult, or senior using conditionals,
+## Exercise 3.2: Classify age into child, teenage, adult, or senior using conditionals,
 ## Solution:
 ```
 age = 25
@@ -308,7 +308,7 @@ else:
 print(f"Age: {age} | Category: {category}") 
 ```
 
-## Exercise 3: Interactive ATM System Simulator
+## Exercise 3.3: Interactive ATM System Simulator
 Create a command-line ATM System Simulator using a while loop.
 Requirements:
 Initialize a variable balance = 1000.
@@ -352,7 +352,7 @@ while True:
         print("Invalid selection! Please choose options 1-4.")
 ```
 
-## Exercise 4: Shopping Cart System
+## Exercise 3.4: Shopping Cart System
 Create a command-line Shopping Cart System using a while loop.
 Requirements:
 Press 1: Add an item along with its price to the shopping cart.
