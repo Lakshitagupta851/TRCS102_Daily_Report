@@ -100,7 +100,7 @@ print(type(c))
 - `float` represents decimal numbers (e.g., `3.14`).
 - `complex` represents numbers with real and imaginary parts (e.g., `2 + 3j`).
 <class 'str'>
-```
+
 ## Text/String Type
 
 A **string (`str`)** is a sequence of characters used to store and manipulate textual data in Python. Strings can contain letters, numbers, symbols, and spaces, and they can be enclosed in **single (`' '`), double (`" "`), or triple (`''' '''` or `""" """`) quotes**. Since strings are **immutable**, their contents cannot be changed after creation.
