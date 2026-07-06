@@ -133,3 +133,51 @@ print(type(result))
 <class 'bool'>
 <class 'NoneType'>
 ```
+
+## 5. Mutability vs. Immutability
+
+One of the most important concepts in Python is understanding mutable and immutable objects.
+| Mutable Objects | Immutable Objects |
+| --------------- | ----------------- |
+| List            | Integer           |
+| Dictionary      | Float             |
+| Set             | String            |
+|                 | Tuple             |
+ ## Immutable Example (Integer)
+
+When an integer changes, Python creates a new object.
+```
+a = 5
+print(f"Value : {a}")
+print(f"Address : {id(a)}")
+a = a + 1
+print(f"Value : {a}")
+print(f"Address : {id(a)}")
+```
+## Output
+```
+Value : 5
+Address : 140735280934984
+
+Value : 6
+Address : 140735280935016
+```
+## Mutable Example (List)
+
+Lists are mutable, so they are modified without creating a new object.
+```
+numbers = [1,2,3]
+print(numbers)
+print(id(numbers))
+numbers.append(4)
+print(numbers)
+print(id(numbers))
+```
+## Output
+```
+[1,2,3]
+140735281652736
+
+[1,2,3,4]
+140735281652736
+```
