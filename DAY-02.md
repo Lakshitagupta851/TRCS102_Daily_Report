@@ -163,6 +163,17 @@ a == c : True
 a is not c : True
 ```
 
+| Operator Type           | Purpose                                               |
+| ----------------------- | ----------------------------------------------------- |
+| Arithmetic              | Performs mathematical calculations                    |
+| Comparison (Relational) | Compares two values                                   |
+| Logical                 | Combines multiple conditions                          |
+| Assignment              | Assigns and updates variable values                   |
+| Bitwise                 | Performs operations on binary values                  |
+| Membership              | Checks whether an element exists in a collection      |
+| Identity                | Checks whether two variables refer to the same object |
+
+
 ## Exercises: Operators ans Expressions
 
 ## Exercise 1: Write a Python script that takes a number (you can hardcode it to start) and checks:
