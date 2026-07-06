@@ -66,7 +66,9 @@ print(type(x))
 
 **Output:**
 ```
-
+<class 'int'>
+<class 'str'>
+```
 # 4. Built-in Data Types
 
 Data types define the kind of value a variable can store and determine the operations that can be performed on it. Python provides several built-in data types, such as **Numeric**, **String**, **List**, **Tuple**, **Set**, **Dictionary**, and **Boolean**. Among these, **Numeric** data types are used to represent numerical values in different forms.
