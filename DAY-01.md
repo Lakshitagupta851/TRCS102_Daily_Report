@@ -53,3 +53,19 @@ a = [1, 2, 3]
 b = a
 print(a is b)   # True
 ```
+## Dynamic Typing
+
+Python is a **dynamically typed** language, which means you do not need to declare the data type of a variable explicitly. The type is determined automatically based on the value assigned and can change during program execution.
+```python
+x = 10
+print(type(x))
+
+x = "Hello"
+print(type(x))
+```
+
+**Output:**
+```
+<class 'int'>
+<class 'str'>
+```
