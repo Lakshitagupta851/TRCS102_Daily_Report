@@ -321,3 +321,10 @@ addition(5, 10, 15, 20)
 ```
 Sum = 50
 ```
+# Key Takeaways
+
+- Functions make code reusable, organized, and easier to maintain.
+- The `return` statement sends values back from a function.
+- Python supports positional, keyword, default, and variable-length arguments.
+- Local and global variables determine where data can be accessed.
+- Recursive functions solve problems by calling themselves until a base condition is met.
