@@ -1,4 +1,4 @@
-## DAY 5 OF TRAINING
+## DAY 6 OF TRAINING
 # Python Foundations — Data Structures (Lists & Tuples)
 
 Welcome to **Day 5 of the Industrial Training for AI & Machine Learning**!
@@ -96,17 +96,142 @@ print(numbers)
 ```
 [2, 5, 8, 10]
 ```
+## Common List Methods
 
-Some commonly used list methods are:
+Python provides several built-in methods to perform operations on lists. These methods make it easy to add, remove, update, and organize data efficiently.
+
+---
+
+## 1. append()
+
+The `append()` method adds a new element to the **end of the list**. It is commonly used when new data needs to be stored.
+
+```python
+fruits = ["Apple", "Banana"]
+
+fruits.append("Mango")
+
+print(fruits)
+```
+
+### Output
+
+```
+['Apple', 'Banana', 'Mango']
+```
+
+---
+
+## 2. insert()
+
+The `insert()` method adds an element at a **specific index** without replacing existing elements.
+
+```python
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits.insert(1, "Orange")
+
+print(fruits)
+```
+
+### Output
+
+```
+['Apple', 'Orange', 'Banana', 'Mango']
+```
+
+---
+
+## 3. remove()
+
+The `remove()` method removes the **specified element** from the list. If multiple occurrences exist, it removes only the first one.
+
+```python
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits.remove("Banana")
+
+print(fruits)
+```
+
+### Output
+
+```
+['Apple', 'Mango']
+```
+
+---
+
+## 4. pop()
+
+The `pop()` method removes and returns the element at a specified index. If no index is provided, it removes the last element.
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers.pop(2)
+
+print(numbers)
+```
+
+### Output
+
+```
+[10, 20, 40]
+```
+
+---
+
+## 5. sort()
+
+The `sort()` method arranges list elements in **ascending order** by default. It modifies the original list.
+
+```python
+numbers = [45, 12, 78, 23]
+
+numbers.sort()
+
+print(numbers)
+```
+
+### Output
+
+```
+[12, 23, 45, 78]
+```
+
+---
+
+## 6. reverse()
+
+The `reverse()` method reverses the order of elements in a list.
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers.reverse()
+
+print(numbers)
+```
+
+### Output
+
+```
+[40, 30, 20, 10]
+```
+
+---
+
+## Summary of List Methods
 
 | Method | Purpose |
 |---------|---------|
-| append() | Adds an element |
-| insert() | Inserts an element at a position |
-| remove() | Removes an element |
-| pop() | Removes element by index |
-| sort() | Sorts the list |
-| reverse() | Reverses the list |
+| `append()` | Adds an element at the end of the list. |
+| `insert()` | Inserts an element at a specified position. |
+| `remove()` | Removes the specified element from the list. |
+| `pop()` | Removes an element using its index. |
+| `sort()` | Arranges elements in ascending order. |
+| `reverse()` | Reverses the order of elements in the list. |
 
 ---
 
