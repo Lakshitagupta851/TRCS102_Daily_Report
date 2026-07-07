@@ -27,23 +27,7 @@ Python provides many built-in functions that are already available for use. Thes
 
 Some commonly used built-in functions are:
 
-| Function | Purpose |
-|----------|---------|
-| `len()` | Returns the length of a sequence |
-| `sum()` | Calculates the sum of elements |
-| `max()` | Finds the largest value |
-| `min()` | Finds the smallest value |
-| `abs()` | Returns the absolute value |
-| `round()` | Rounds a decimal number |
-| `print()` | Displays output |
-
 ---
-## Built-in Functions
-
-Python provides several built-in functions that are readily available to perform common operations. These functions help reduce the amount of code we write and make programs more efficient. Some of the most frequently used built-in functions are discussed below.
-
----
-
 ## 1. len()
 
 The `len()` function returns the total number of elements present in a sequence such as a string, list, tuple, dictionary, or set. It is commonly used to determine the size of a collection.
