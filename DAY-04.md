@@ -324,6 +324,73 @@ Sum = 40
 ```
 
 ---
+## Exercise 2: Create a Function to Calculate the Area of a Rectangle
+
+Write a Python function that accepts the **length** and **width** as parameters and prints the area of the rectangle.
+
+### Solution
+
+```python
+def rectangle_area(length, width):
+    area = length * width
+    print("Area of Rectangle:", area)
+
+rectangle_area(8, 5)
+```
+
+### Output
+
+```
+Area of Rectangle: 40
+```
+
+---
+
+## Exercise 3: Create a Function to Find the Larger Number
+
+Write a Python function that accepts two numbers as arguments and prints the larger number.
+
+### Solution
+
+```python
+def find_larger(num1, num2):
+    if num1 > num2:
+        print("Larger Number:", num1)
+    else:
+        print("Larger Number:", num2)
+
+find_larger(35, 50)
+```
+
+### Output
+
+```
+Larger Number: 50
+```
+
+---
+
+## Exercise 4: Create a Function to Check Voting Eligibility
+
+Write a Python function that accepts a person's **name** and **age** as parameters. If the age is 18 or above, print that the person is eligible to vote; otherwise, print that they are not eligible.
+
+### Solution
+
+```python
+def check_voting(name, age):
+    if age >= 18:
+        print(name, "is eligible to vote.")
+    else:
+        print(name, "is not eligible to vote.")
+
+check_voting("Lakshita", 20)
+```
+
+### Output
+
+```
+Lakshita is eligible to vote.
+```
 
 # Key Takeaways
 
