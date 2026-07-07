@@ -1,7 +1,7 @@
 ## DAY 6 OF TRAINING
 # Python Foundations — Data Structures (Lists & Tuples)
 
-Welcome to **Day 5 of the Industrial Training for AI & Machine Learning**!
+Welcome to **Day 6 of the Industrial Training for AI & Machine Learning**!
 
 In today's session, we explored Python's **Data Structures**, focusing on **Lists** and **Tuples**. These data structures are widely used for storing, organizing, and manipulating data efficiently. In AI and Machine Learning, they are commonly used for handling datasets, storing model outputs, and performing data preprocessing tasks.
 
