@@ -318,8 +318,7 @@ A heatmap displaying the values using color intensity.
 - Seaborn simplifies statistical visualization with attractive default styles.
 - Histograms, Box Plots, and Heatmaps are useful for data analysis.
 - Data visualization is an essential step in Data Science and Machine Learning.
-````
+  
 sns.histplot(marks, bins=5)
 plt.title("Marks Distribution")
 plt.show()
-````
