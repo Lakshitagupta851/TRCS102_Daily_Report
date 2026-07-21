@@ -1,4 +1,4 @@
-<img width="857" height="671" alt="image" src="https://github.com/user-attachments/assets/3601d668-6850-4f39-a4b5-188b42bc86fb" />DAY 14 OF TRAINING
+## DAY 14 OF TRAINING
 ## Python Data Visualization — Matplotlib & Seaborn
 
 Welcome to this session of **Industrial Training for AI & Machine Learning**!
