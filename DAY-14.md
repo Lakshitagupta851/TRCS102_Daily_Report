@@ -1,4 +1,4 @@
-DAY 14 OF TRAINING
+<img width="857" height="671" alt="image" src="https://github.com/user-attachments/assets/3601d668-6850-4f39-a4b5-188b42bc86fb" />DAY 14 OF TRAINING
 ## Python Data Visualization — Matplotlib & Seaborn
 
 Welcome to this session of **Industrial Training for AI & Machine Learning**!
@@ -59,6 +59,7 @@ plt.grid(True)
 
 plt.show()
 ```
+<img width="832" height="667" alt="WhatsApp Image 2026-07-21 at 10 05 44 AM" src="https://github.com/user-attachments/assets/e0ae7ef5-1f1a-43b1-8aa1-26671bf95955" />
 
 ### Output
 
@@ -81,6 +82,7 @@ plt.title("Favorite Treats")
 
 plt.show()
 ```
+<img width="857" height="671" alt="image" src="https://github.com/user-attachments/assets/e3eb6345-66fb-4a79-8d3b-38c31b337b60" />
 
 ### Output
 
@@ -104,6 +106,7 @@ plt.title("Scatter Plot")
 
 plt.show()
 ```
+<img width="785" height="590" alt="image" src="https://github.com/user-attachments/assets/f5bbb063-123f-4cd2-b9c9-c5878c59c385" />
 
 ### Output
 
@@ -127,6 +130,7 @@ plt.title("Marks Distribution")
 
 plt.show()
 ```
+<img width="785" height="620" alt="image" src="https://github.com/user-attachments/assets/dfc0b6b9-66fe-4ff7-aef0-71e55a444690" />
 
 ### Output
 
@@ -173,6 +177,7 @@ plt.title("Box Plot")
 
 plt.show()
 ```
+<img width="816" height="666" alt="image" src="https://github.com/user-attachments/assets/3471be68-4c34-485d-94b2-b26c1c052cd6" />
 
 ### Output
 
@@ -197,6 +202,7 @@ sns.heatmap(data, annot=True, cmap="Blues")
 
 plt.show()
 ```
+<img width="1002" height="672" alt="WhatsApp Image 2026-07-21 at 10 13 28 AM" src="https://github.com/user-attachments/assets/0a2d3916-b0b3-475d-b3d1-44a8ef420d84" />
 
 ### Output
 
@@ -322,4 +328,3 @@ A heatmap displaying the values using color intensity.
 sns.histplot(marks, bins=5)
 plt.title("Marks Distribution")
 plt.show()
-<img width="1600" height="1200" alt="WhatsApp Image 2026-07-20 at 9 16 05 PM" src="https://github.com/user-attachments/assets/d600093f-e11b-4ab1-8f11-cdf4b39b3da0" />
