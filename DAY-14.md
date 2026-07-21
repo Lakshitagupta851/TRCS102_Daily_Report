@@ -322,3 +322,4 @@ A heatmap displaying the values using color intensity.
 sns.histplot(marks, bins=5)
 plt.title("Marks Distribution")
 plt.show()
+<img width="1600" height="1200" alt="WhatsApp Image 2026-07-20 at 9 16 05 PM" src="https://github.com/user-attachments/assets/d600093f-e11b-4ab1-8f11-cdf4b39b3da0" />
