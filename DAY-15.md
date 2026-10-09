@@ -90,6 +90,9 @@ plt.show()
 
 The histogram displays the distribution of passenger ages, along with a smooth KDE curve.
 
+<img width="722" height="485" alt="image" src="https://github.com/user-attachments/assets/cf12126b-1b17-42fc-88b7-35b204158859" />
+
+
 **Observation:** The graph helps identify the age ranges that occur most frequently among passengers. Missing age values are not included in the histogram.
 
 ---
@@ -122,6 +125,9 @@ plt.show()
 
 The count plot compares the number of passengers who survived with the number who did not survive.
 
+<img width="725" height="487" alt="image" src="https://github.com/user-attachments/assets/bb3bd3f6-5b81-4d17-a7eb-78cace3494d9" />
+
+
 **Observation:** The graph shows that more passengers did not survive than survived in the Titanic training dataset.
 
 ---
@@ -151,6 +157,9 @@ plt.show()
 ### Output
 
 The box plot displays the distribution of ticket fares and potential outliers.
+
+<img width="672" height="482" alt="image" src="https://github.com/user-attachments/assets/4fdeb9bf-f9de-4466-8ce7-d26755179f2e" />
+
 
 **Observation:** The graph helps identify unusually high ticket fares. These values may require further investigation before statistical analysis.
 
