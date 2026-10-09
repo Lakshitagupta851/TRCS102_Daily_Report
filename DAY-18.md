@@ -37,9 +37,8 @@ plt.title("Waterfront Status vs House Price")
 plt.show()
 
 ```
-
-**Graph:** 
 <img width="762" height="485" alt="image" src="https://github.com/user-attachments/assets/795a1288-6a1c-4fd5-939a-4c2983b8dd84" />
+**Graph:** 
 
 
 **Observation:** A box plot compares the median, spread, and potential outliers in the prices of waterfront and non-waterfront properties. The analysis indicates that waterfront houses tend to be more expensive. However, the plot does not prove that waterfront status alone causes the price difference.
