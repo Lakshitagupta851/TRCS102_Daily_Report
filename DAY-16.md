@@ -87,6 +87,9 @@ plt.show()
 
 The scatter plot displays passenger ages against ticket fares, with colors indicating survival status.
 
+
+<img width="592" height="441" alt="image" src="https://github.com/user-attachments/assets/fc0a52a9-dd98-48bf-923f-9a1071d4bb69" />
+
 **Observation:** The graph helps compare ticket fares paid by passengers of different ages and examine their survival status. Some passengers paid substantially higher fares than others.
 
 ---
@@ -137,6 +140,9 @@ plt.show()
 ### Output
 
 The correlation heatmap displays relationships among survival status, passenger class, age, and ticket fare. Each cell contains a correlation coefficient, with colors indicating its direction and strength.
+
+
+<img width="557" height="427" alt="image" src="https://github.com/user-attachments/assets/46cba528-6df2-48f8-becc-57a1d97324fb" />
 
 **Observations:**
 
