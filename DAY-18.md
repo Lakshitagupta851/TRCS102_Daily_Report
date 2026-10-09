@@ -55,7 +55,9 @@ plt.title("Condition vs Average House Price")
 plt.show()
 ```
 
-**Graph:** 
+**Graph:**
+
+
 <img width="752" height="492" alt="image" src="https://github.com/user-attachments/assets/c1985155-c4bf-4430-903a-df1dcbaac3d4" />
 
 
@@ -75,7 +77,9 @@ plt.title("Correlation Heatmap")
 plt.show()
 ```
 
-**Graph:** 
+**Graph:**
+
+
 <img width="820" height="712" alt="image" src="https://github.com/user-attachments/assets/79cedba5-1f72-45ca-ba51-ca2887517457" />
 
 
