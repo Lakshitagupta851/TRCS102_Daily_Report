@@ -56,15 +56,8 @@ The notebook uses `StandardScaler` on `yr_built` and stores the result in `Year_
 - **Min-Max Scaling:** Usually transforms values into the range 0 to 1.
 - **Standard Scaling:** Centers values around zero and scales them according to their standard deviation. Values are not restricted to a fixed range.
 
-## 4. Distribution of House Prices
 
-A histogram shows how frequently values occur within different numerical intervals. It is useful for understanding the shape and spread of a numerical variable.
-
-![House price distribution histogram](images/cell13_graph.png)
-
-**Observation:** The distribution is generally right-skewed, with many houses concentrated in the lower-to-middle price ranges and fewer houses at higher prices. Examining this distribution helps identify patterns and potential extreme values before model training.
-
-## 5. One-Hot Encoding
+## 4. One-Hot Encoding
 
 Machine learning algorithms generally require numerical input. One-hot encoding converts categorical values into separate columns containing binary indicators.
 
@@ -80,7 +73,7 @@ The notebook uses `pd.get_dummies()` to convert the illustrative `Neighborhood` 
 
 **Note:** These neighborhood categories are randomly generated for demonstration in the notebook; they are not actual neighborhood classifications from the original housing dataset.
 
-## 6. Feature Selection
+## 5. Feature Selection
 
 Feature selection involves choosing the columns that will be retained for further analysis or model training.
 
@@ -100,7 +93,7 @@ The notebook selects the following columns for the final dataset:
 
 Selecting relevant columns helps organize the dataset and prepare it for the next stage of the machine learning workflow.
 
-## 7. Saving the Preprocessed Dataset
+## 6. Saving the Preprocessed Dataset
 
 The selected data is saved as a CSV file named:
 
@@ -108,7 +101,7 @@ The selected data is saved as a CSV file named:
 
 Saving the preprocessed data makes it easier to load the dataset later for model training, testing, and evaluation without repeating every preprocessing step.
 
-## 8. Importance of Data Preprocessing
+## 7. Importance of Data Preprocessing
 
 Data preprocessing is important because:
 
@@ -119,6 +112,6 @@ Data preprocessing is important because:
 
 Scaling and encoding should be performed appropriately for the selected machine learning algorithm. For reliable model evaluation, scaling parameters should be learned from the training data and then applied to the test data.
 
-## 9. Conclusion
+## 8. Conclusion
 
 This task demonstrated Min-Max scaling, Standard scaling, one-hot encoding, feature selection, and saving the final dataset. These techniques transform data into a more suitable format for machine learning and prepare it for subsequent model development.
