@@ -95,7 +95,6 @@ print(df.head())
 The dataset is loaded into a DataFrame. The output displays the number of rows and columns and previews the first five records.
 
 **Note:** Keep `kc_house_data.csv` in the same working directory as the notebook, or provide its correct file path.
-
 ---
 
 ## 3. Examining Dataset Columns
@@ -220,7 +219,9 @@ plt.ylabel("Number of Houses", fontsize=12)
 plt.show()
 ```
 
-### Output — House-Price Histogram
+### Output — House-Price Histogram 
+
+<img width="902" height="496" alt="image" src="https://github.com/user-attachments/assets/1f8558b4-e5a7-4fb0-a8c0-1341a251b5cb" />
 
 The graph displays house prices on the horizontal axis and the number of houses on the vertical axis. The KDE curve shows the approximate shape of the price distribution.
 
@@ -262,6 +263,7 @@ plt.show()
 The graph displays the frequency of houses for each bedroom count.
 
 **Observation:** The count plot helps identify the most common bedroom configurations and reveals whether extremely large bedroom counts occur infrequently.
+<img width="907" height="486" alt="image" src="https://github.com/user-attachments/assets/b9d518b1-f617-4e11-808f-997e393b5d37" />
 
 ---
 
