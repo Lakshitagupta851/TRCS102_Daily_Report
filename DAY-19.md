@@ -61,13 +61,8 @@ Values outside these boundaries are considered potential outliers.
 
 In the notebook, a `find_caps()` function calculates the limits. Capping restricts extreme values to the calculated boundaries instead of deleting the corresponding observations.
 
-## 6. IQR Method Illustration
 
-![IQR method illustration](images/preprocessing_illustration.png)
-
-**Observation:** The IQR method identifies potential outliers by examining values that lie outside the lower and upper boundaries.
-
-## 7. Boxplot of Living Area
+## 6. Boxplot of Living Area
 
 A boxplot represents the median, quartiles, spread, and potential outliers of numerical data.
 
@@ -77,7 +72,7 @@ A boxplot represents the median, quartiles, spread, and potential outliers of nu
 
 **Observation:** The boxplot shows points beyond the upper whisker, indicating unusually large living-area values. These observations can influence some machine learning algorithms, so the notebook applies IQR capping to the `sqft_living` column.
 
-## 8. Outlier Capping
+## 7. Outlier Capping
 
 The notebook applies IQR-based capping to these numerical columns:
 
@@ -92,7 +87,7 @@ The values outside the calculated boundaries are clipped to the lower or upper l
 
 **Observation:** The graph displays the distribution of house prices after the capping step. The box represents the middle 50% of values, while the whiskers show the range represented by the boxplot.
 
-## 9. Importance of Outlier Handling
+## 8. Importance of Outlier Handling
 
 Outlier handling is useful because:
 
@@ -103,6 +98,6 @@ Outlier handling is useful because:
 
 However, genuine extreme values should not automatically be removed because they may contain important information.
 
-## 10. Conclusion
+## 9. Conclusion
 
 This task demonstrated missing-value inspection and outlier handling using the IQR method. Potential outliers were identified using boxplots, and capping was applied to selected numerical columns. These steps help prepare the housing dataset for subsequent machine learning tasks.
