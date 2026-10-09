@@ -1,4 +1,4 @@
-# Day 23: Polynomial Regression — Predicting House Prices Using Curves 🏠📈
+# Day 23: Polynomial Regression — Predicting House Prices Using Curves
 
 ## Introduction
 
