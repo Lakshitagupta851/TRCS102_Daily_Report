@@ -71,7 +71,9 @@ In the notebook, a `find_caps()` function calculates the limits. Capping restric
 
 A boxplot represents the median, quartiles, spread, and potential outliers of numerical data.
 
-![Boxplot of living area](images/cell10_graph.png)
+<img width="1085" height="592" alt="image" src="https://github.com/user-attachments/assets/c55f0d0f-9801-4648-ac6e-ed5fc2cf6219" />
+
+
 
 **Observation:** The boxplot shows points beyond the upper whisker, indicating unusually large living-area values. These observations can influence some machine learning algorithms, so the notebook applies IQR capping to the `sqft_living` column.
 
@@ -85,7 +87,8 @@ The notebook applies IQR-based capping to these numerical columns:
 
 The values outside the calculated boundaries are clipped to the lower or upper limit. This approach retains the observations while limiting the influence of extreme values.
 
-![House price boxplot after capping](images/cell12_graph.png)
+<img width="1081" height="590" alt="image" src="https://github.com/user-attachments/assets/9c7cb897-5153-4918-883b-debb9905cb50" />
+
 
 **Observation:** The graph displays the distribution of house prices after the capping step. The box represents the middle 50% of values, while the whiskers show the range represented by the boxplot.
 
