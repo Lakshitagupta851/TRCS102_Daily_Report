@@ -1,4 +1,4 @@
-# Day 26: Classification and Logistic Regression — Predicting Titanic Passenger Survival 🚢
+# Day 26: Classification and Logistic Regression — Predicting Titanic Passenger Survival
 
 ## Introduction
 
@@ -265,10 +265,9 @@ print(classification_report(
     y_pred,
     target_names=["Did Not Survive", "Survived"]
 ))
+```
 
 <img width="567" height="387" alt="image" src="https://github.com/user-attachments/assets/759a2722-609a-4ffb-a599-3b619f9fc077" />
-
-```
 
 ## 6. Understanding Classification Metrics
 
@@ -422,6 +421,7 @@ print(classification_report(
 The multiclass model predicts one of three passenger classes. Its confusion matrix is a 3 × 3 table that shows how many passengers from each actual class were assigned to each predicted class.
 
 The classification report provides precision, recall and F1-score for each class.
+
 ![Uploading image.png…]()
 
 
