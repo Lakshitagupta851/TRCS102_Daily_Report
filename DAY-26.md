@@ -422,8 +422,6 @@ The multiclass model predicts one of three passenger classes. Its confusion matr
 
 The classification report provides precision, recall and F1-score for each class.
 
-![Uploading image.png…]()
-
 
 ## 8. Binary vs. Multiclass Classification
 
