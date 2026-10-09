@@ -1,4 +1,4 @@
-# Day 24: Ridge Regression — Controlling Overfitting with L2 Regularization 🎗️
+# Day 24: Ridge Regression — Controlling Overfitting with L2 Regularization 
 
 ## Introduction
 
