@@ -23,9 +23,7 @@ sns.scatterplot(
 )
 plt.title("Living Area vs House Price")
 plt.show()
-```
-
-**Graph:**  Markdown: ![Living area vs house price](images/03_sqft_living_vs_price_scatterplot.png)
+``` 
 
 **Observation:** Each point represents a property. The horizontal axis shows living area in square feet, while the vertical axis shows price. The plot generally indicates that larger living areas tend to be associated with higher prices, although prices vary considerably. The colors distinguish waterfront status.
 
@@ -37,9 +35,12 @@ sns.boxplot(x='waterfront', y='price', data=df, hue='waterfront')
 plt.xticks([0, 1], ['No waterfront', 'Waterfront'])
 plt.title("Waterfront Status vs House Price")
 plt.show()
+
 ```
 
-**Graph:** Insert the actual waterfront-versus-price box plot here.
+**Graph:** 
+<img width="762" height="485" alt="image" src="https://github.com/user-attachments/assets/795a1288-6a1c-4fd5-939a-4c2983b8dd84" />
+
 
 **Observation:** A box plot compares the median, spread, and potential outliers in the prices of waterfront and non-waterfront properties. The analysis indicates that waterfront houses tend to be more expensive. However, the plot does not prove that waterfront status alone causes the price difference.
 
@@ -52,7 +53,9 @@ plt.title("Condition vs Average House Price")
 plt.show()
 ```
 
-**Graph:** Insert the actual condition-versus-average-price bar plot here.
+**Graph:** 
+<img width="752" height="492" alt="image" src="https://github.com/user-attachments/assets/c1985155-c4bf-4430-903a-df1dcbaac3d4" />
+
 
 **Observation:** The bar plot compares average house prices across property-condition categories. It helps explore differences in average selling prices. These differences may also be influenced by living area, location, waterfront status, and other features.
 
@@ -70,7 +73,9 @@ plt.title("Correlation Heatmap")
 plt.show()
 ```
 
-**Graph:** Insert the actual correlation heatmap here.
+**Graph:** 
+<img width="820" height="712" alt="image" src="https://github.com/user-attachments/assets/79cedba5-1f72-45ca-ba51-ca2887517457" />
+
 
 **How to Read the Heatmap**
 
