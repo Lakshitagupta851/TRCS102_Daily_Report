@@ -24,9 +24,7 @@ By the end of this session, you will be able to:
 
 ## What is Data Visualization?
 
-Data Visualization is the graphical representation of data using charts and graphs. It helps us understand complex datasets easily by identifying patterns, trends, distributions, and unusual values.
-
-In Python, Matplotlib and Seaborn are commonly used libraries for creating different types of visualizations.
+Data Visualization is the graphical representation of data using charts and graphs. It helps us understand complex datasets by identifying patterns, trends, distributions, and unusual values.
 
 ### Installing Required Libraries
 
@@ -47,37 +45,27 @@ import seaborn as sns
 
 ## 1. Loading and Inspecting the Dataset
 
-The first step in data analysis is loading the dataset and examining its contents. In this session, we use the Titanic dataset stored in the `train.csv` file.
-
-The `read_csv()` function loads the dataset into a Pandas DataFrame, while `head(3)` displays the first three rows.
+The first step in data analysis is loading the dataset and examining its contents. We use the Titanic dataset stored in the `train.csv` file.
 
 ```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 df = pd.read_csv("train.csv")
 
 print("Data loaded successfully!")
 print(df.head(3))
+print(df.isnull().sum())
 ```
 
-To check missing values in each column, we use:
+**Output**
 
-```python
-df.isnull().sum()
-```
-
-**Output:** The first three rows of the Titanic dataset are displayed, along with information about missing values when the second command is executed.
+The first three rows of the dataset and the number of missing values in each column are displayed.
 
 ---
 
 ## 2. Passenger Age Distribution — Histogram
 
-A histogram represents the distribution of numerical data by grouping values into intervals called bins. It helps us understand which ranges occur most frequently.
+A histogram displays the distribution of numerical data by grouping values into intervals called bins. It helps us understand which age ranges occur most frequently.
 
-In this example, we visualize the ages of Titanic passengers and use a KDE (Kernel Density Estimation) curve to show the approximate shape of the distribution.
+The KDE curve shows the approximate shape of the age distribution.
 
 ### Python Code
 
@@ -95,79 +83,97 @@ sns.histplot(
 plt.title("Titanic Passenger Age Distribution")
 plt.xlabel("Age (Years)")
 plt.ylabel("Passenger Count")
+plt.tight_layout()
+plt.savefig("day15_age_distribution.png")
 plt.show()
 ```
 
 ### Output
 
-A histogram showing the distribution of passenger ages, with a smooth KDE curve.
+A histogram showing the distribution of passenger ages along with a smooth KDE curve.
 
-**Observation:** The dataset's age distribution indicates that many passengers were young adults, particularly those between approximately 20 and 35 years old. Some age values may be missing.
+![Titanic passenger age distribution](day15_age_distribution.png)
+
+**Observation:** The graph helps identify the most common age ranges among passengers. Missing age values are not included in the histogram.
 
 ---
 
 ## 3. Passenger Survival Counts — Count Plot
 
-A count plot displays the number of observations belonging to each category. In the Titanic dataset, the `Survived` column indicates whether a passenger survived.
+A count plot displays the number of observations in different categories. In the Titanic dataset, the `Survived` column represents passenger survival status.
 
 * `0` represents passengers who did not survive.
 * `1` represents passengers who survived.
-
-We use Seaborn's `countplot()` function to compare the two categories.
 
 ### Python Code
 
 ```python
 plt.figure(figsize=(6, 4))
 
-sns.countplot(data=df, x="Survived", palette="Set2")
+sns.countplot(
+    data=df,
+    x="Survived",
+    hue="Survived",
+    palette="Set2",
+    legend=False
+)
 
-plt.title("Passenger Survival Counts (0 = Died, 1 = Survived)")
-plt.xlabel("Survival Status")
+plt.title("Passenger Survival Counts")
+plt.xlabel("Survival Status (0 = Died, 1 = Survived)")
 plt.ylabel("Number of Passengers")
+plt.tight_layout()
+plt.savefig("day15_survival_counts.png")
 plt.show()
 ```
 
 ### Output
 
-A count plot comparing the number of passengers who survived with the number who did not survive.
+A count plot comparing passengers who survived with those who did not survive.
 
-**Observation:** The visualization shows that more passengers did not survive than survived in the Titanic dataset.
+![Titanic passenger survival counts](day15_survival_counts.png)
+
+**Observation:** The graph shows that more passengers did not survive than survived in the training dataset.
 
 ---
 
 ## 4. Ticket Fare Distribution — Box Plot
 
-A box plot represents the distribution of numerical data using quartiles, a median, and whiskers. It is useful for identifying potential outliers.
+A box plot represents numerical data using quartiles, a median, and whiskers. It helps identify potential outliers.
 
-An **outlier** is a value that lies unusually far from the majority of the observations.
-
-In this example, we analyze the `Fare` column to understand ticket prices and identify unusually high fares.
+An outlier is a value that lies unusually far from most other observations.
 
 ### Python Code
 
 ```python
 plt.figure(figsize=(8, 4))
 
-sns.boxplot(data=df, x="Fare", color="pink")
+sns.boxplot(
+    data=df,
+    x="Fare",
+    color="pink"
+)
 
-plt.title("Ticket Fare Distribution & Outliers")
+plt.title("Ticket Fare Distribution and Outliers")
 plt.xlabel("Ticket Fare")
+plt.tight_layout()
+plt.savefig("day15_fare_boxplot.png")
 plt.show()
 ```
 
 ### Output
 
-A box plot showing the distribution of ticket fares and points representing potential outliers.
+A box plot showing the distribution of ticket fares and potential outliers.
 
-**Observation:** The visualization shows several high-fare outliers. The notebook's analysis indicates that the highest fare exceeded 500, while most passengers paid less than 50.
+![Titanic ticket fare box plot](day15_fare_boxplot.png)
+
+**Observation:** The graph helps identify unusually high ticket fares. These values may affect statistical analysis and should be investigated before deciding how to handle them.
 
 ---
 
 ## Conclusion
 
-In this session, we practiced data visualization using the Titanic dataset. We loaded and inspected the data, studied passenger age distribution, compared survival counts, and identified unusual ticket fares.
+In this session, we practiced data visualization using the Titanic dataset. We loaded and inspected the data, studied passenger age distribution, compared survival counts, and identified potential ticket fare outliers.
 
-These visualizations demonstrate how graphs help us understand data more clearly and discover meaningful patterns before performing further analysis.
+These visualizations demonstrate how graphs help us understand data clearly and discover meaningful patterns before performing further analysis.
 
 ---
